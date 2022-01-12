@@ -111,8 +111,6 @@ window.dom = {
         return container.content.firstChild;
     },
     after: function after(currentNode, nextNode) {
-        console.log(currentNode.parentNode);
-        console.log(currentNode.nextSibling);
         // 当前节点的爸爸，调用他爸爸的方法，然后把 nextNode 插入到 currentNode下一个节点  节点 节点的前面
         currentNode.parentNode.insertBefore(nextNode, currentNode.nextSibling);
     },
